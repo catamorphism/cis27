@@ -31,7 +31,8 @@ public class Deque<A> {
 	 * Remove from the end
 	 * Insert before a given node
 	 * Insert after a given node
-	 * Remove a given nodeMove to front (move an object to the front)
+	 * Remove a given node
+         * Move to front (move an object to the front)
 	 * Move to end (move an object to the end)
 	 */
 	public static void main(String[] args) {
