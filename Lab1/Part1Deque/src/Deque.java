@@ -42,10 +42,11 @@ public class Deque<A> {
 			d.insertAtBeginning(42);
 			assert(d.length() == 1);
 			assert(d.head().value() == 42);
+			System.out.println("All tests passed!");
 		} catch(Exception e) {
+			System.out.println("Test failed!");
 			System.out.println(e.toString());
 		}
-		System.out.println("All tests passed!");
 		/* Write unit tests for all other methods */
 	}
 
