@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Lab1Part3/deps/algs4-1.0.0.0.jar"/>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
