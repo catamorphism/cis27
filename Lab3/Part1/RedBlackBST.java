@@ -485,12 +485,9 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// StdOut.println("black height of root = " + black_height);
 		assert (black_height <= blackHeight);
 		if (blackHeight == black_height) {
-			// either both of the root's children are black, so this is the smallest node;
-			// or this node has a red left child, in which case we should return the left
-			// child
-			if (root.left != null && root.color == RED) {
-				return root.left;
-			}
+			// This is the only black node whose black height is black_height,
+			// because if there is a left child, that node is either red; or it's
+			// black but has black height black_height - 1
 			return root;
 		} else {
 			return findBlackNodeWithSmallestKey(root, blackHeight, black_height);
@@ -551,12 +548,10 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
 		
 		Node result = null;
 		
-		// Either this node has two black children (so we should return parent),
-		// or it has a red left child (so we should return the left child)
+		// This must be the smallest black node whose black height is black_height,
+		// because if there is a left child, that node is either red; or it's
+		// black but has black height black_height - 1
 		if (parentsBlackHeight == black_height) {
-			if (parent.left != null && parent.left.color == RED) {
-				result = parent.left;
-			}
 			result = parent;
 		}
 
