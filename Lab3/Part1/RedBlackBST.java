@@ -511,9 +511,7 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// the right child has lower black height and the left child must be smaller
 		if (parentsBlackHeight == black_height) {
 			result = parent;
-		}
-
-		if (parent.left == null && parent.right == null) {
+		} else if (parent.left == null && parent.right == null) {
 			// A leaf has black height 1. So the desired black height must be 1 if we've
 			// reached
 			// this case.
@@ -553,9 +551,7 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// black but has black height black_height - 1
 		if (parentsBlackHeight == black_height) {
 			result = parent;
-		}
-
-		if (parent.left == null && parent.right == null) {
+		} else if (parent.left == null && parent.right == null) {
 
 			// A leaf has black height 1. So the desired black height must be 1 if we've
 			// reached
