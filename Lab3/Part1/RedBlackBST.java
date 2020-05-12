@@ -14,7 +14,7 @@
  *   However, it's always 0. Your task is to figure out what code in the put() and delete()
  *   methods could change the black height, and modify that code so the blackHeight
  *   instance variable is updated.
- * 2. Modify the join() method as per the TODO comment.
+ * 2. Modify the joinHelper() method as per the TODO comment.
  * 3. Modify the fixup() method (line 379) as per the TODO comment.
  * 4. Modify the findBlackNodeWithLargestKey() and findBlackNodeWithSmallestKey() methods
  *     as per the TODO comments.
